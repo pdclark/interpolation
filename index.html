@@ -1,23 +1,43 @@
 <HTML>
-<body>
-  <ul id="list">
-  </ul>
-  <div class="menu">
-    <h3>Steps</h3>
-      <input type="number" id="numSteps" value="8" min="2" max="34"/>
-    <h3>Colors</h3>
-      <input type="color" class="colors" id="start" value="#d43c60" size="7" />
-      <input type="color" class="colors" id="end" value="#29b347" size="7" />
-      <input type="checkbox" id="usehex" /> hex instead
-      <input type="checkbox" id="usehsl" /> hsl
-  </div>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h1>Color Interpolation</h1>
+        <form class="colors">
+          <input type="color" class="color" id="start" value="#d43c60" size="7" />
+          <input type="color" class="color" id="end" value="#f5f934" size="7" />
+        </form>
+        <form class="steps">
+          <input type="range" class="numSteps" value="8" min="3" max="40"/>
+          <span class="num"></span>
+        </form>
+        <div class="interpolationTypes">
+          <form class="interpolationForm">
+            <input type="radio" name="interpolationType" value="hsl" /> hsl
+            <input type="radio" name="interpolationType" value="rgb" checked/> rgb
+            <input type="radio" name="interpolationType" value="hcl" /> hcl
+          </form>
+        </div>
+        <div class="readme">
+          <p>Choose two colors for interpolation in three ways: HSL, HCL, or RGB.</p>
+
+          <p>Best viewed in Chrome or Firefox.</p>
 
 
-  <br/>
-</body>
-<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-<script src="./interpolate.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
+        </div>
+      </div>
+      <ul class="list">
+      </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="./interpolate.js"></script>
+  </body>
+
+
 
 </HTML>

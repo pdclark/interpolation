@@ -1,35 +1,70 @@
 body {
   text-align:center;
   font-family: 'Georgia';
-  background-color: black;
   color: azure;
+  margin: 0;
+  font-size: 10px;
 }
 
-ul {
-  display: inline-block;
+.container {
+  position: relative;
+}
+
+.sidebar {
+  float: left;
+  padding: 0 1%;
+  width: 20%;
+  background-color: #65be2b;
+  height: 100%;
+}
+
+.list {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+  display: flex;
+  flex-wrap: wrap;
   list-style-type:none;
 }
 
-li {
-  height: 100px;
+.interim {
+  height: 200px;
   width: 100px;
   display: inline-block;
-  line-height: 100px;
+  line-height: 200px;
   text-align:center;
+  flex-grow: 1;
+  flex-basis: 25%;
 }
 
-li span {
+.colorRgb {
   margin-right:10px;
   color: white;
+  font-size: 20px;
+}
+
+.num {
+  position: absolute;
+  right: 10px;
+  top: 3px;
 }
 
 input {
   background-color: black;
-  color: azure;
 }
 
-.menu {
-  position: fixed;
-  margin-left: 100px;
-  margin-top: 20px;
+.readme {
+  font-size: 15px;
+  margin-top: 30%;
+}
+
+.steps {
+  position: relative;
+}
+
+.color {
+  width: 100px;
+  height: 50px;
+  display: block;
+  margin: 5% auto;
 }
