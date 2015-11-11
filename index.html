@@ -1,79 +1,23 @@
 <HTML>
 <body>
-  <h1>Make a Gradient!</h1>
+  <ul id="list">
+  </ul>
   <div class="menu">
-    <h3>Number of Gradient Steps Between Colors</h3>
-      <input type="number" id="numSteps" value="8" min="2" max="34" step="2"/>
-    <h3>Number of Colors</h3> 
-      <input type="radio" value="2" name="numColors">2</input>
-      <input type="radio" value="3" name="numColors" checked>3</input>
-    <h3>Pick Your Colors</h3>
+    <h3>Steps</h3>
+      <input type="number" id="numSteps" value="8" min="2" max="34"/>
+    <h3>Colors</h3>
       <input type="color" class="colors" id="start" value="#d43c60" size="7" />
-      <input type="color" class="colors" id="mid" value="#d7d5bf" size="7" />
       <input type="color" class="colors" id="end" value="#29b347" size="7" />
-    <h5>Input Hex Instead</h5>
-      <input type="checkbox" id="usehex" />
-
-    <h3>Your Hex Array</h3>
-    <textarea></textarea>
+      <input type="checkbox" id="usehex" /> hex instead
+      <input type="checkbox" id="usehsl" /> hsl
   </div>
 
 
-  <ul id="list">
-  </ul>
   <br/>
 </body>
 <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 <script src="./interpolate.js"></script>
-<style>
-  body {
-    text-align:center;
-    font-family: 'Georgia';
-    background-color: black;
-    color: azure;
-  }
-
-  span #steps {
-    width: 20px;
-  }
-
-  ul {
-    margin: 20px auto;
-    width: 80px;
-    padding:10px;
-    list-style-type:none;
-  }
-
-  li {
-    border-radius: 50px;
-    height: 30px;
-    margin-top: 1px;
-    line-height: 30px;
-    text-align:right;
-    position: relative;
-  }
-  
-  li span {
-    margin-right:10px;
-    color: white;
-  }
-
-  input {
-    background-color: black;
-    color: azure;
-  }
-
-  div.menu {
-    position: fixed;
-    margin-left: 100px;
-    margin-top: 20px;
-  }
-
-  div textarea {
-    height: 200px;
-    width: 300px;
-    border-radius: 5px;
-  }
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 
 </HTML>

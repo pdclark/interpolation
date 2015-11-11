@@ -1,0 +1,35 @@
+body {
+  text-align:center;
+  font-family: 'Georgia';
+  background-color: black;
+  color: azure;
+}
+
+ul {
+  display: inline-block;
+  list-style-type:none;
+}
+
+li {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  line-height: 100px;
+  text-align:center;
+}
+
+li span {
+  margin-right:10px;
+  color: white;
+}
+
+input {
+  background-color: black;
+  color: azure;
+}
+
+.menu {
+  position: fixed;
+  margin-left: 100px;
+  margin-top: 20px;
+}
