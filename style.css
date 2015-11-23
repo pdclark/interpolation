@@ -40,9 +40,7 @@ h3 { font-family: 'Merriweather'; }
 }
 
 .num {
-  position: absolute;
-  right: 10px;
-  top: 3px;
+  padding-right: 5px;
 }
 .labels {
   font-size: .9rem;
@@ -83,6 +81,9 @@ input { background-color: #65be2b; }
   .numSteps {
     width: 6rem;
   }
+  .num {
+    font-size: .75rem;
+  }
 }
 
 @media (max-width: 800px){
@@ -103,5 +104,9 @@ input { background-color: #65be2b; }
   }
   .numSteps {
     width: 5rem;
+  }
+
+  .num {
+    font-size: .7rem;
   }
 }
