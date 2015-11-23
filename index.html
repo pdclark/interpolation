@@ -1,24 +1,26 @@
 <HTML>
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="foundation.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <div class="container">
       <div class="sidebar">
-        <h1>Color Interpolation</h1>
+        <h3>Color Interpolation</h3>
         <form class="colors">
           <input type="color" class="color" id="start" value="#d43c60" size="7" />
           <input type="color" class="color" id="end" value="#f5f934" size="7" />
         </form>
         <form class="steps">
           <input type="range" class="numSteps" value="8" min="3" max="40"/>
-          <span class="num"></span>
+          <span class="num labels"></span>
         </form>
         <div class="interpolationTypes">
           <form class="interpolationForm">
-            <input type="radio" name="interpolationType" value="hsl" /> hsl
-            <input type="radio" name="interpolationType" value="rgb" checked/> rgb
-            <input type="radio" name="interpolationType" value="hcl" /> hcl
+            <input type="radio" name="interpolationType" value="hsl" /><span class="labels"> hsl</span>
+            <input type="radio" name="interpolationType" value="rgb" checked/><span class="labels"> rgb</span>
+            <input type="radio" name="interpolationType" value="hcl" /><span class="labels"> hcl</span>
           </form>
         </div>
         <div class="readme">
